@@ -6,8 +6,6 @@ Codebase for the NeurIPS submission "Your Attention Matters: to Improve Model Ro
 
 1. **Install packages**
 ```sh
-$git clone https://github.com/omihub777/ViT-CIFAR.git
-$cd ViT-CIFAR/
 $bash setup.sh
 ```
 

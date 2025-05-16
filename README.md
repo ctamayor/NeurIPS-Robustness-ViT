@@ -11,7 +11,7 @@ $bash setup.sh
 
 2. **Corrupt Images**
 
-For C10, C100, and Imagenette, you must first generate the images using transforms.py. For ImageNet, the corruptions are generated at runtime due to the dataset size so you do not need to run transforms.py.
+For C10, C100, and Imagenette, you must first generate the images using transforms.py.
 ```sh
 $python transforms.py --dataset imagenette --severity-min 5 --severity-max 6 --corruption fog
 ```

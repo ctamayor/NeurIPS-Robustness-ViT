@@ -1,6 +1,6 @@
 ## Overview
 
-Codebase for the NeurIPS submission "Your Attention Matters: to Improve Model Robustness to Noise and Spurious Correlations." This pytorch implementation is built off of the repo https://github.com/omihub777/ViT-CIFAR where the main differences are the new attention implementations, support for Imagenette and ImageNet, and image corruptions. 
+Codebase for the NeurIPS submission "Your Attention Matters: to Improve Model Robustness to Noise and Spurious Correlations." This work is built off of the repo https://github.com/omihub777/ViT-CIFAR, authored by Omnihub777, licensed under MIT. Our additions are the new attention implementations, support for Imagenette and ImageNet, and image corruption functionality.
 
 ## 1. Quick Start
 

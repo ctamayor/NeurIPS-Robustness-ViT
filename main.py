@@ -57,6 +57,7 @@ def parse_args(args=None):
     parser.add_argument("--test-corruption")
     parser.add_argument("--severity", default=1, type=int)
     parser.add_argument("--init-values", type=float)
+    parser.add_argument('--no-normalization', action='store_true', help='Disable normalization.')
     args = parser.parse_args(args)
     torch.manual_seed(args.seed)
     np.random.seed(args.seed)

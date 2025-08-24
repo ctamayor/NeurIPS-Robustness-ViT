@@ -231,9 +231,9 @@ def fog(x, severity=1):
 
     x = np.array(x) / 255.
     max_val = x.max()
-    if x.size[0] == 32: # CIFAR image (32 x 32)
+    if np.size(x,axis=0) == 32: # CIFAR image (32 x 32)
         x += c[0] * plasma_fractal(wibbledecay=c[1])[:32, :32][..., np.newaxis]
-    elif x.size[0] == 224: # Imagenette image (224 x 224)
+    elif np.size(x,axis=0) == 224: # Imagenette image (224 x 224)
         start = (256 - 224) // 2  # Center crop
         x += c[0] * plasma_fractal(mapsize=256,wibbledecay=c[1])[start:start+224,start:start+224][..., np.newaxis]
     return np.clip(x * max_val / (max_val + c[0]), 0, 1) * 255
